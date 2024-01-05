@@ -11,8 +11,11 @@
     Number 2: <input type="text" name="number2"><br>
     <input type="submit" value="Submit">
   </form>
-  {% if result %}
-  <p>{{ result }}</p>
+  {% if numbers_received %}
+  <p>{{ numbers_received }}</p>
+  <p>{{ sum_result }}</p>
+  {% elif message %}
+  <p>{{ message }}</p>
   {% endif %}
 </body>
 
